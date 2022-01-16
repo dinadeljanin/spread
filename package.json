@@ -1,0 +1,118 @@
+{
+  "name": "sprd",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Passive-Aggressive License",
+  "jest": {
+    "transform": {
+      "\\.js$": "<rootDir>/node_modules/babel-jest"
+    }
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.2.2",
+    "@defi-wonderland/smock": "^2.0.7",
+    "@ensdomains/ensjs": "^2.0.1",
+    "@metamask/detect-provider": "^1.2.0",
+    "@openzeppelin/contracts": "^4.3.3",
+    "@popperjs/core": "^2.9.3",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@tippyjs/react": "^4.2.6",
+    "artifacts": "file:./artifacts",
+    "chalkercli": "^1.6.4",
+    "cowsay": "^1.5.0",
+    "dateformat": "^5.0.2",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.5.1",
+    "framer-motion": "^4.1.17",
+    "fuzzy": "^0.1.3",
+    "got": "^12.0.1",
+    "img2term": "^1.0.3",
+    "immer": "^9.0.6",
+    "lightweight-charts": "^3.7.0",
+    "lodash": "^4.17.21",
+    "numeral": "^2.0.6",
+    "pluralize": "^8.0.0",
+    "polished": "^4.1.3",
+    "react": "^17.0.2",
+    "react-confetti": "^6.0.1",
+    "react-countdown": "^2.3.2",
+    "react-date-picker": "^8.3.6",
+    "react-datepicker": "^4.5.0",
+    "react-device-detect": "^2.1.2",
+    "react-dom": "^17.0.2",
+    "react-jazzicon": "^0.1.3",
+    "react-loading-skeleton": "^3.0.1",
+    "react-paginate": "^8.1.0",
+    "react-popper": "^2.2.5",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "^4.0.3",
+    "react-use-pagination": "^2.0.1",
+    "react-use-window-size": "^1.0.1",
+    "rpc-cap": "^4.0.0",
+    "styled-components": "^5.3.3",
+    "terminal-image": "1.2.0",
+    "unix-timestamp": "^0.2.0",
+    "use-immer": "^0.6.0",
+    "web-vitals": "^2.1.2",
+    "web3": "^1.6.0",
+    "yargs": "^17.2.1",
+    "yarn-audit-fix": "^7.2.0"
+  },
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run --network localhost scripts/deploy.js",
+    "fund": "npx hardhat run --network localhost scripts/fund-dai.js",
+    "random": "npx hardhat run scripts/random-bet.js",
+    "lint:css": "stylelint './src/**/*.js' --config stylelint.config.js",
+    "lint:react": "eslint .",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!@sprd)/\" --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@stylelint/postcss-css-in-js": "^0.37.2",
+    "@welldone-software/why-did-you-render": "^6.2.1",
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.27.1",
+    "ethereum-waffle": "^3.0.0",
+    "hardhat": "^2.6.5",
+    "postcss-jsx": "^0.36.4",
+    "postcss-syntax": "^0.36.2",
+    "stylelint": "^14.1.0",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-order": "^5.0.0",
+    "stylelint-processor-styled-components": "^1.10.0"
+  }
+}
