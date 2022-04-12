@@ -5,7 +5,7 @@
 <br />
 
 <div align=center>
-  <a href='https://damp-resonance-6295.on.fleek.co/'>
+  <a href='https://spread.on.fleek.co/'>
     <img src='docs/images/fleek-shield.svg' />
   </a>
   <a href='https://kovan.etherscan.io/address/0xF589B70705f859490658DA86a1220ea7496036f3'>
