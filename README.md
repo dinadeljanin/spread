@@ -47,7 +47,7 @@ Spread is betting dApp lets users challenge each other on the price movement of 
 1. After you clone this repo, but before you do anything else, you'll want to get a shiny new API key from [Alchemy](https://dashboard.alchemyapi.io/).
 2. Create a `.env` file. Copy what's in [.env.example](.env.example). Throw your API key in there.
 ![env example](docs/images/env-example.png)
-3. Run `yarn install`.
+3. Run `yarn install --frozen-lockfile`.
 4. Run `npx hardhat clean` to clear the cache and delete the artifacts.
 5. Run `npx hardhat compile` to compile the smart contracts.
 6. To get the local fork up and running, you'll want to run `npx hardhat node`.
